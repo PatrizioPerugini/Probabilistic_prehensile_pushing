@@ -51,3 +51,46 @@ In order to set up other hyperparameters check all available arguments, for a de
 ```shell
 python3 main.py -h
 ```
+### Optional Arguments
+
+```shell
+
+  -rrt RRT                                Choose 1 to run RRT.
+
+  -step_s STEP_SIZE_RRT                   Define the step size of RRT.
+
+  -eps EPS_GOAL_RRT                       Define the epsilon threshold to determine RRT convergence.
+
+  -num_rp NUM_RANDOM_POINTS               Number of random points the algorithm is evaluated with.
+                                          To initialize a specific goal position (gp) and 
+                                          start position (sp) choose this parameter to 0.
+                                         
+
+  -gp GOAL_POSITION                       Specify the goal position as a comma-separated list 
+                                          of numbers, e.g., `1.0,2.0,3.0`.
+
+  -sp START_POSITION                      Specify the start position as a comma-separated list 
+                                          of numbers, e.g., `1.0,2.0,3.0`.
+
+  -nlp NLP                                Choose 1 to run NLP.
+
+  -n_steps NUMBER_OF_STEPS                Specify the number of steps.
+
+  -p POSITION                             Set to 1 to optimize position.
+
+  -t TIME                                 Set to 1 to optimize time.
+
+  -le LAMBDA_ENTROPY                      Define entropy cost.
+
+  -lp LAMBDA_PATH                         Define path length cost.
+
+  -lkl LAMBDA_KL                          Define KL divergence cost.
+
+  -t_max MAXIMUM_TIME                     Specify maximum convergence time.
+
+  -shape OBJECT_SHAPE                     Choose either `S` or `T` as object shape.
+
+  -s_all SAMPLE_FROM_ALL_OBJ              Sample from all objects.
+
+  -d_mc DISCRETIZATION0                   Define the granularity when solving nlp. 0 means no discretization.
+
