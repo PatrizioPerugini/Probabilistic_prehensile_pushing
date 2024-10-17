@@ -94,3 +94,28 @@ python3 main.py -h
 
   -d_mc DISCRETIZATION0                   Define the granularity when solving nlp. 0 means no discretization.
 
+```
+# Running experiments
+To run a specific experiment using the provided `main.py` script,  you will need to select and specify several parameters. The following command is an example of how to evaluate an NLP algorithm while optimizing position and time for 20 different poses, with an additional objective of minimizing the overall path length:
+```shell
+python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1 -lp 0.1
+```
+### Explanation of parameters
+* `-num_rp 20`: This parameter sets the number of randomly sampled poses to 20.
+
+* `-nlp 1`: This flag activates the NLP (Nonlinear Programming) algorithm. Setting it to 1 enables the NLP optimization mode.
+
+* `-p 1`: This enables position optimization. 
+
+* `-t 1`: This enables time optimization. The total trajectory time becomes an optimization variable as well.
+
+* `-lp 0.1`: This sets the weight for path length optimization to 0.1. A lower value (e.g., 0.01) gives less priority to minimizing the overall path length, while higher values will give higher priority.
+
+ ### General usage
+
+ To adjust the experiment, you can modify the parameters as needed. For instance, if you want to optimize only the position and ignore the time, you can run:
+ 
+ ```shell
+python3 main.py -num_rp 20 -nlp 1 -p 1 -lp 0.1
+```
+
