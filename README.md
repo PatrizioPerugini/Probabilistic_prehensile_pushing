@@ -119,3 +119,37 @@ python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1 -lp 0.1
 python3 main.py -num_rp 20 -nlp 1 -p 1 -lp 0.1
 ```
 
+# Reproducing the experiments
+A quick guide on how to reproduce the experiments in the paper. For any other combination of parameters, check the available list of parameters.
+
+To run RRT:
+``` shell
+python3 main.py -num_rp 20 -rrt 1 -eps 0.001 -step_s 0.01
+```
+
+To optimize pushers and velocity run:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 
+```
+To optimize pushers, velocity and position run:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 -p 1
+```
+To optimize pushers, velocity, position and time run:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1
+```
+To optimize pushers, velocity and time run:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 -t 1
+```
+To optimize pushers, velocity ,position and time while considering path lenght:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1 -lp 0.05
+```
+To optimize pushers, velocity ,position and time while considering kl term:
+``` shell
+python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1 -lkl 0.01
+```
+
+
