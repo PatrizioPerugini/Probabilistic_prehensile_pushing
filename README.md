@@ -152,4 +152,26 @@ To optimize pushers, velocity ,position and time while considering kl term:
 python3 main.py -num_rp 20 -nlp 1 -p 1 -t 1 -lkl 0.01
 ```
 
+## Citation
+
+If you find this environment useful in your research, then please consider citing:
+
+
+```
+@ARTICLE{10930575,
+  author={Perugini, Patrizio and Lundell, Jens and Friedl, Katharina and Kragic, Danica},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Pushing Everything Everywhere All At Once: Probabilistic Prehensile Pushing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/LRA.2025.3552267}}
+```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
+
+
 
