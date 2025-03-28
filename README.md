@@ -1,7 +1,8 @@
 # Probabilistic prehensile pushing
 `Prehensile pushing` is the task of manipulating grasped objects by pushing them against the environment. 
 
-This repository provides the implementation of the paper Probabilistic_prehensile_pushing [TBD] and our reimplementation of the paper [In-Hand Manipulation Via Motion Cones] used as a baseline.
+This repository provides the implementation of the paper Probabilistic_prehensile_pushing [Pushing Everything Everywhere All At Once: Probabilistic Prehensile Pushing
+](https://arxiv.org/pdf/2503.14268) and our reimplementation of the paper [In-Hand Manipulation Via Motion Cones](https://arxiv.org/abs/1810.00219) used as a baseline.
 
 * `Optimization-based`: in Probabilistic prehensile pushing the aim is to solve an optimization problem in order to find the velocities that can lead us to a specific pose.
 * `Sampling-based`: in In-Hand Manipulation Via Motion Cones the solution is found using a sampling algorithm.
@@ -37,7 +38,7 @@ Probabilistic_prehensile_pushing/
 * The sampling algorithm implementation is in the folder `in_hand_manipulation`.
 * The motion cones generation is in the folder `utils`.
 
-To install the dependencies, please run the following command in shell. [TBD]
+To install the dependencies, please run the following command in shell.
 ```shell
 pip install -r requirements.txt
 ```
