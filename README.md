@@ -1,7 +1,7 @@
 # Probabilistic prehensile pushing
 `Prehensile pushing` is the task of manipulating grasped objects by pushing them against the environment. 
 
-This repository provides the implementation of the paper Probabilistic_prehensile_pushing [Pushing Everything Everywhere All At Once: Probabilistic Prehensile Pushing
+This repository provides the implementation of the paper [Pushing Everything Everywhere All At Once: Probabilistic Prehensile Pushing
 ](https://arxiv.org/pdf/2503.14268) and our reimplementation of the paper [In-Hand Manipulation Via Motion Cones](https://arxiv.org/abs/1810.00219) used as a baseline.
 
 * `Optimization-based`: in Probabilistic prehensile pushing the aim is to solve an optimization problem in order to find the velocities that can lead us to a specific pose.
